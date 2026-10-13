@@ -7,7 +7,7 @@
 [![tools](https://img.shields.io/badge/tools-35%20实测-FFC72C)](MCP_INTEGRATION.md)
 [![cities](https://img.shields.io/badge/城市-281-DA291C)](#)
 [![stores](https://img.shields.io/badge/可办门店-3664-FFC72C)](#)
-[![tests](https://img.shields.io/badge/tests-63%20passed-0F6E56)](#八测试)
+[![tests](https://img.shields.io/badge/tests-98%20passed-0F6E56)](#九测试)
 [![license](https://img.shields.io/badge/license-MIT-444)](LICENSE)
 
 ---
@@ -70,10 +70,11 @@ git clone https://github.com/johnny37/mcd-experience-atlas.git
 cd mcd-experience-atlas
 
 # 2. （可选）验证安装 —— 无需 Token，纯本地运行
-python tests/test_toon.py        # 19 项
-python tests/test_data_pack.py   # 20 项
-python tests/test_contest_compliance.py  # 24 项
-# → 共 63 项，全部通过即说明环境就绪
+python tests/test_toon.py               # 19 项
+python tests/test_data_pack.py          # 20 项
+python tests/test_booking_gates.py      # 35 项
+python tests/test_contest_compliance.py # 24 项
+# → 共 98 项，全部通过即说明环境就绪
 
 # 3. 查看地图（无需 Token）
 python -m http.server 8000
@@ -211,9 +212,52 @@ python tests/test_data_pack.py
 | **门店搜索与筛选** | 支持按城市名或门店名全局搜索；可按「仅可预约」过滤门店 |
 | **数据洞察面板** | 自动算出「全国零城市可约的活动」「覆盖最窄的在售活动」「门店集中度」等结论 |
 
+## 五、预约功能（带确认闸，默认关闭）
+
+地图与查询全部只读；`src/book.py` 额外提供了**可真实下单**的能力，但默认关闭，
+只在满足下列全部条件时才创建订单：
+
+1. 用户**精确说出**「确认创建订单」——「试试看」「可以就下单」等模糊措辞一律视为未确认；
+2. 用户核对过完整回显（活动 / 门店 / 日期 / 场次 / 人数 / 单价 / 预估总额）；
+3. 用户提供的**订单指纹**与当前参数算出的一致（防止「确认的是 A、下单的是 B」）；
+4. 前置校验通过：人数在 `[partyMin, partyMax]` 内、余位 > 0、`shopId == 5`、
+   `partyType` 与商品规则一致、满足提前预订天数。
+
+```bash
+# 第一步：只读，任何时候都安全，可反复运行
+python src/book.py --spu-id 8516 --city 南宁市 --store 3570247 \
+    --date 2026-10-17 --session 36915550 --count 6
+
+# 第二步：写操作，真实创建订单
+python src/book.py --spu-id 8516 --city 南宁市 --store 3570247 \
+    --date 2026-10-17 --session 36915550 --count 6 \
+    --confirm 确认创建订单 --fingerprint <第一步给出的指纹>
+```
+
+实测回显效果（南宁水晶城餐厅，生日派对）：
+
+```
+活动名称   ：麦当劳一起开心鸭尊享版生日派对
+派对类型   ：包场          人数规则：5-12 人（年龄 4-12）
+门店       ：麦当劳南宁水晶城餐厅（青秀区金湖路61号）
+预约日期   ：2026-10-17    场次：12:00 – 13:30   余位 12
+参与人数   ：6 人          单价 ¥138.00/位      预估总额 ¥828.00
+订单指纹   ：74E14B2F22B1
+```
+
+**三条不可妥协的安全约束：**
+
+- **绝不重试 `party-order-create`**——若订单已创建但响应未读回，重试会产生重复订单，
+  这是金钱相关的不可逆操作。`mcp_client.call()` 对写操作工具强制 `retries=0`。
+- **默认黑名单**——`mcp_client.WRITE_TOOLS` 默认拦截全部 7 个写操作工具，
+  须显式 `allow_write=True` 才放行，且只有 `book.py` 会这么做。
+- **审计留痕**——每次下单尝试写入 `data/booking_audit.log`，便于事后核对。
+
+这些约束由 `tests/test_booking_gates.py`（35 项）锁定，全部离线运行、不发真实请求。
+
 ---
 
-## 五、地图合规说明
+## 六、地图合规说明
 
 默认视图是**纯 SVG 散点图**：只绘制城市坐标点与经纬网格，**不描绘任何行政边界、不加载任何在线底图瓦片**，
 因此不涉及领土表示，可安全托管到 GitHub Pages 等任意静态空间。
@@ -228,7 +272,7 @@ python tests/test_data_pack.py
 
 ---
 
-## 六、技术要点
+## 七、技术要点
 
 这个项目的技术含量不在前端，而在**摸清一条没有文档的链路**。
 
@@ -273,7 +317,7 @@ mall-points-products → query-party-city → query-party-store
 
 ---
 
-## 七、目录结构
+## 八、目录结构
 
 ```
 mcd-experience-atlas/
@@ -301,7 +345,8 @@ mcd-experience-atlas/
 │   ├── mcp_client.py         MCP 客户端（混合响应解析、429 退避、写操作黑名单）
 │   ├── toon.py               TOON 解析器（含字面量 \n 归一化）
 │   ├── collect.py            采集脚本（支持 --deep / --resume）
-│   └── build_atlas.py        数据打包 + 单文件版本生成（同时输出根 index.html）
+│   ├── build_atlas.py        数据打包 + 单文件版本生成（同时输出根 index.html）
+│   └── book.py               体验活动预约：带确认闸的下单流程（默认只读）
 ├── web/
 │   ├── index.html            图谱页面（零依赖）
 │   └── atlas.js              投影 + 视图切换 + 品类筛选 + 搜索交互
@@ -315,19 +360,23 @@ mcd-experience-atlas/
 
 ---
 
-## 八、测试
+## 九、测试
 
 ```bash
 python tests/test_toon.py               # 19 项：TOON 解析与混合响应提取
 python tests/test_data_pack.py          # 20 项：数据包结构与自洽性
+python tests/test_booking_gates.py      # 35 项：下单确认闸的安全属性
 python tests/test_contest_compliance.py # 24 项：参赛要求逐项合规校验
-# → 共 63 项，全部通过
+# → 共 98 项，全部通过
 ```
 
 三个测试各自锁定一类风险：
 
 - `test_toon.py`——TOON 的字面量 `\n` 陷阱、混合响应中「不能误取说明文档里的 JSON 示例」；
-- `test_data_pack.py`——`data/atlas.json` 的计数一致性、城市字段完整性、
+- `test_booking_gates.py`——锁住「默认只读 + 显式确认 + 写操作不重试」三条安全属性：
+只读客户端必须拒绝全部 7 个写操作工具、模糊确认串不构成确认、
+订单指纹随任一要素变化、越界人数与零余位被拦截。全部离线运行，不发真实请求。
+`test_data_pack.py`——`data/atlas.json` 的计数一致性、城市字段完整性、
   覆盖矩阵的 `cityCodes` 可解析、门店索引无孤立键、场次价格单位为分；
 - `test_contest_compliance.py`——按官方参赛要求逐项校验：四个必需文件名未改动、
   README 四个必备章节齐全、`CONTEST_DECLARATION.md` 与官方原文 MD5 一致（内容未改动）、
@@ -338,7 +387,7 @@ python tests/test_contest_compliance.py # 24 项：参赛要求逐项合规校�
 
 ---
 
-## 九、采集的健壮性
+## 十、采集的健壮性
 
 长任务中断是真实会发生的事（实测遇到过代理 502）。采集脚本为此做了三件事：
 
@@ -349,7 +398,7 @@ python tests/test_contest_compliance.py # 24 项：参赛要求逐项合规校�
 
 ---
 
-## 十、目标用户
+## 十一、目标用户
 
 - **家长**：想给孩子办一场麦当劳生日派对，先确认自己城市有没有、哪家店、什么价位；
 - **行政 / HR**：筹备团建或品鉴会，需要横向对比可选门店与时段；
@@ -358,13 +407,13 @@ python tests/test_contest_compliance.py # 24 项：参赛要求逐项合规校�
 
 ---
 
-## 十一、参赛文件清单
+## 十二、参赛文件清单
 
 按《麦当劳程序员创意开发大赛》要求逐项对照：
 
 | # | 文件 | 官方要求 | 本项目状态 |
 |---|---|---|---|
-| 1 | `README.md` | 必须，文件名不可改动；含项目介绍、安装方法、使用示例、目标用户 | ✅ 四项分别为第一、二、三、十节 |
+| 1 | `README.md` | 必须，文件名不可改动；含项目介绍、安装方法、使用示例、目标用户 | ✅ 四项分别为第一、二、三、十一节 |
 | 2 | `CONTEST_DECLARATION.md` | 必须，**文件名及内容均不可改动** | ✅ 官方原文件，MD5 与官方仓库一致 |
 | 3 | `MCP_INTEGRATION.md` | 必须，文件名不可改动；说明 MCP Server、Tool、调用流程和业务价值 | ✅ 见该文件第 1~6 节 |
 | 4 | 源代码 | 必须，形式不限 | ✅ `src/` 4 个 Python 模块 + `web/` 前端 + `tests/` |
@@ -376,7 +425,7 @@ python tests/test_contest_compliance.py # 24 项：参赛要求逐项合规校�
 
 ---
 
-## 十二、免责声明
+## 十三、免责声明
 
 本项目为独立参赛作品，由参赛者独立开发，**非麦当劳官方产品，也未获得麦当劳品牌背书**。
 项目展示的所有数据来源于麦当劳中国 MCP 的只读接口返回，仅供参考；

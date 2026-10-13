@@ -153,13 +153,26 @@ def extract_business_json(raw: str) -> Optional[Dict[str, Any]]:
 
 
 class McDonaldsMcp:
-    """只读 MCP 客户端。"""
+    """麦当劳 MCP 客户端。
 
-    def __init__(self, token: Optional[str] = None, min_interval: float = 0.15):
+    默认**只读**：``WRITE_TOOLS`` 中的写操作工具一律拒绝调用。
+    确需下单时，必须以 ``allow_write=True`` 显式解锁，且由 ``src/book.py``
+    中的确认闸流程把关——不要在别处直接解锁。
+    """
+
+    def __init__(
+        self,
+        token: Optional[str] = None,
+        min_interval: float = 0.15,
+        allow_write: bool = False,
+    ):
         self._token = token or load_token()
         self._min_interval = min_interval
         self._last_call = 0.0
         self.call_count = 0
+        self.allow_write = allow_write
+        # 已执行过的写操作，用于防止同一进程内重复下单
+        self.write_audit: List[str] = []
 
     def _throttle(self) -> None:
         elapsed = time.monotonic() - self._last_call
@@ -181,9 +194,21 @@ class McDonaldsMcp:
 
         ``data`` 为空时不视为失败（服务端存在静默空返回），
         是否重试由调用方根据业务语义决定。
+
+        写操作工具的三条硬约束：
+        1. 未显式 ``allow_write=True`` 时一律拒绝；
+        2. **绝不重试**——若订单已创建但响应未读回，重试会产生重复订单，
+           这是金钱相关的不可逆操作；
+        3. 调用记入 ``write_audit``，便于审计与防止同进程重复下单。
         """
         if tool in WRITE_TOOLS:
-            raise McpError("拒绝调用写操作工具：%s" % tool)
+            if not self.allow_write:
+                raise McpError(
+                    "拒绝调用写操作工具：%s。客户端未开启 allow_write；"
+                    "请使用 src/book.py 的确认闸流程，不要在别处直接解锁。" % tool
+                )
+            retries = 0
+            self.write_audit.append(tool)
 
         payload = {
             "jsonrpc": "2.0",
@@ -223,6 +248,10 @@ class McDonaldsMcp:
     # ------------------------------------------------------------------
     def experience_spus(self) -> List[Dict[str, Any]]:
         return self.call_data("mall-points-products") or []
+
+    def product_detail(self, spu_id: int) -> Dict[str, Any]:
+        """商品详情，用于获取 skuId 与 partyType（下单前必需）。"""
+        return self.call_data("mall-product-detail", {"spuId": spu_id}) or {}
 
     def party_cities(self, spu_id: int) -> List[Dict[str, Any]]:
         return self.call_data("query-party-city", {"spuId": spu_id}) or []

@@ -49,17 +49,23 @@ README 写作 `query-partystore-session`，按 README 名称调用会失败。
 | Tool | 在本项目中的用途 | 关键入参 | 关键返回 |
 |---|---|---|---|
 | `mall-points-products` | **链路入口**：获取体验类 SPU 清单 | 无（可选 `catRuleIds`） | `spuId`、`spuName`、`point`、`price`、`catName`、`shopId` |
+| `mall-product-detail` | 取 `skuId`、`partyType` 与人数/年龄/提前预订规则 | `spuId` | `skuList[].skuId`、`shopId`、`partyType`、`partyPeople`、`partyAge`、`partyRange`、`note` |
 | `query-party-city` | 查某体验品类可预约的城市 | `spuId` | 城市 `code`、`name`、`latitude`、`longitude`、`initial` |
 | `query-party-store` | 查某城市下可办该活动的门店 | `code`、`latitude`、`longitude`、`spuId` | 门店 `code`、`name`、`address`、经纬度、`businessStatus`、`onlineBusinessStatus`、`distanceText` |
-| `query-party-store-date` | 查某门店可预约日期 | `storeCode`、`spuId` | `date` 列表（7 天滚动） |
+| `query-party-store-date` | 查某门店可预约日期 | `storeCode`、`spuId` | `date` 列表（滚动） |
 | `query-party-store-session` | 查某门店某日期的场次 | `spuId`、`storeCode`、`dateStr` | `id`、`timeStart`、`timeEnd`、`partyMin`、`partyMax`、`price`（分）、`leftNum` |
 | `list-nutrition-foods` | 餐品营养参考数据（TOON 格式） | 无 | 160 项营养表 |
 | `query-lottery-info` | 积分抽奖活动与奖池 | 无 | `activityName`、`drawPoint`、`prizes`、`drawDecision` |
 | `campaign-calendar` | 当月营销活动日历 | 无 | `dailyList`（含 `articleDto` 营销文案） |
 | `tools/list` | 核对工具总数与名称 | 无 | 35 个工具的完整元数据 |
+| `party-order-create` | **下单（写操作，默认关闭）** | `spuId`、`skuId`、`partyType`、`code`、`storeCode`、`dateStr`、`id`、`timeStart`、`timeEnd`、`leftNum`、`count`、`partyTimeInfo` | 订单状态与订单信息 |
 
-> 说明：`party-order-create`（包场 / 拼场下单）属于写操作，本项目**从不调用**。
-> 前端只做「哪里能办、什么时候有位」的只读呈现，实际下单由用户在麦当劳官方渠道完成。
+**关于 `party-order-create` 的两点说明：**
+
+1. **默认不调用。** 地图与查询链路全部只读；下单只在 `src/book.py` 的确认闸流程中执行，
+   且需用户精确说出「确认创建订单」并提供匹配的订单指纹。
+2. **绝不重试。** 若订单已创建但响应未读回，重试会产生重复订单——这是金钱相关的
+   不可逆操作。因此 `mcp_client.call()` 对写操作工具强制 `retries=0`。
 
 ---
 
@@ -71,25 +77,56 @@ README 写作 `query-partystore-session`，按 README 名称调用会失败。
 mall-points-products                    ① 取体验类 SPU（shopId=5）
         │
         ▼
-query-party-city(spuId)                 ② 该品类可预约的城市（281 个，含经纬度）
+mall-product-detail(spuId)              ② skuId / partyType / 人数与年龄 / 提前预订天数
         │
         ▼
-query-party-store(code, lat, lng, spuId) ③ 该城市可办门店（如北京 365 家）
+query-party-city(spuId)                 ③ 该品类可预约的城市（281 个，含经纬度）
         │
         ▼
-query-party-store-date(storeCode, spuId) ④ 该门店可约日期（7 天滚动）
+query-party-store(code, lat, lng, spuId) ④ 该城市可办门店（如北京 365 家）
         │
         ▼
-query-party-store-session(...)           ⑤ 该日期的场次（时段 / 人数 / 价格 / 余位）
+query-party-store-date(storeCode, spuId) ⑤ 该门店可约日期（滚动）
         │
         ▼
-   （本项目到此为止，不调用 party-order-create）
+query-party-store-session(...)           ⑥ 该日期的场次（时段 / 人数 / 价格 / 余位）
+        │
+        ▼
+   【确认闸】用户核对回显 + 指纹，精确说「确认创建订单」
+        │
+        ▼
+party-order-create(...)                  ⑦ 下单（写操作，默认关闭，绝不重试）
 ```
 
 **关键点：这条链路的入口是积分商城工具，不是独立的「派对工具」。**
 官方门户文档完全没有记载 `query-party-*` 系列，参赛者若只读门户文档不会发现这条链路。
 
-### 4.2 单次调用的请求形态
+### 4.2 下单的确认闸设计
+
+`party-order-create` 涉及真实资金，本项目对它做了四层防护：
+
+| 层 | 措施 |
+|---|---|
+| 默认关闭 | `mcp_client.WRITE_TOOLS` 黑名单默认拦截全部 7 个写操作工具，须显式 `allow_write=True` 才放行 |
+| 两步确认 | 第一步只读回显全部订单要素与指纹；第二步才带 `--confirm 确认创建订单 --fingerprint <指纹>` 执行 |
+| 指纹绑定 | 指纹由 `spuId/skuId/partyType/code/storeCode/dateStr/sessionId/count` 算出，改任一要素指纹即变，防止「确认 A 下单 B」 |
+| 前置校验 | 人数在 `[partyMin, partyMax]` 内、余位 > 0、`shopId == 5`、`partyType` 与商品规则一致、满足 `partyRange` 提前预订天数 |
+
+模糊措辞（「试试看」「可以就下单」「OK」等）在代码里显式判定为**未确认**。
+执行结果写入 `data/booking_audit.log` 供事后核对。
+
+**实测到的商品规则**（spuId 8516，麦当劳一起开心鸭尊享版生日派对）：
+
+| 字段 | 值 |
+|---|---|
+| `skuId` | 9093 |
+| `partyType` | 1（仅包场，不支持拼团） |
+| `partyPeople` | 5-12 |
+| `partyAge` | 4-12 岁 |
+| `partyRange` | 3（需提前 3 天预订） |
+| 退改规则 | 至少于活动举办日前 3 天申请；活动当天缺席费用不退 |
+
+### 4.3 单次调用的请求形态
 
 服务端无状态，无需 `initialize` 握手，直接 POST：
 

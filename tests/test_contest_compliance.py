@@ -58,7 +58,7 @@ def main():
     check("README 含「项目介绍」章节", "## 一、项目介绍" in t)
     check("README 含「安装方法」章节", "## 二、安装方法" in t)
     check("README 含「使用示例」章节", "## 三、使用示例" in t)
-    check("README 含「目标用户」章节", "## 十、目标用户" in t)
+    check("README 含「目标用户」章节", "## 十一、目标用户" in t)
     check("安装方法含环境要求", "环境要求" in t)
     check("安装方法含可执行步骤", "git clone" in t)
     check("使用示例不少于 3 个", len(re.findall(r"### 示例 \d", t)) >= 3)
