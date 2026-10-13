@@ -1,0 +1,5082 @@
+{
+ "capturedAt": "2026-10-13 22:39:39",
+ "spuId": 1830,
+ "sampledCities": 79,
+ "totalSessions": 157,
+ "items": [
+  {
+   "cityCode": "430700",
+   "cityName": "常德市",
+   "storeCode": "3390218",
+   "storeName": "麦当劳常德人民路下南门餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3390218"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3390218"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907917,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10003292",
+     "leftNum": 12
+    },
+    {
+     "id": 36912844,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10003292",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "320400",
+   "cityName": "常州市",
+   "storeCode": "1990113",
+   "storeName": "麦当劳常州万达餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1990113"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1990113"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908142,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10004453",
+     "leftNum": 12
+    },
+    {
+     "id": 36913068,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10004453",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "211300",
+   "cityName": "朝阳市",
+   "storeCode": "3230166",
+   "storeName": "麦当劳朝阳黄河路万达餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230166"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230166"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36846712,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16218969",
+     "leftNum": 12
+    },
+    {
+     "id": 36851641,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16218969",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "445100",
+   "cityName": "潮州市",
+   "storeCode": "1400471",
+   "storeName": "麦当劳潮州财富广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1400471"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1400471"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904759,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15915869",
+     "leftNum": 12
+    },
+    {
+     "id": 36909716,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15915869",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "431000",
+   "cityName": "郴州市",
+   "storeCode": "3390290",
+   "storeName": "麦当劳郴州五岭新天地餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3390290"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3390290"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907958,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15149265",
+     "leftNum": 12
+    },
+    {
+     "id": 36912885,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15149265",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "510100",
+   "cityName": "成都市",
+   "storeCode": "3450261",
+   "storeName": "麦当劳成都高新区大魔方餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3450261"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3450261"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36842174,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12593358",
+     "leftNum": 12
+    },
+    {
+     "id": 36847136,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12593358",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "130800",
+   "cityName": "承德市",
+   "storeCode": "1950145",
+   "storeName": "麦当劳承德新华路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1950145"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1950145"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845389,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15275168",
+     "leftNum": 12
+    },
+    {
+     "id": 36850320,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15275168",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "469023",
+   "cityName": "澄迈县",
+   "storeCode": "1421215",
+   "storeName": "麦当劳澄迈老城生态软件园餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1421215"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1421215"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908647,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15311060",
+     "leftNum": 12
+    },
+    {
+     "id": 36913558,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15311060",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "341700",
+   "cityName": "池州市",
+   "storeCode": "3500098",
+   "storeName": "麦当劳池州人民路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500098"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500098"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908560,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14978037",
+     "leftNum": 12
+    },
+    {
+     "id": 36913481,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14978037",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "150400",
+   "cityName": "赤峰市",
+   "storeCode": "1980462",
+   "storeName": "麦当劳赤峰众联广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1980462"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1980462"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904162,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16024479",
+     "leftNum": 12
+    },
+    {
+     "id": 36909123,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16024479",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "341100",
+   "cityName": "滁州市",
+   "storeCode": "3500094",
+   "storeName": "麦当劳滁州新城吾悦广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500094"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500094"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904093,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12045707",
+     "leftNum": 12
+    },
+    {
+     "id": 36909055,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12045707",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "532300",
+   "cityName": "楚雄彝族自治州",
+   "storeCode": "3570245",
+   "storeName": "麦当劳楚雄市信义街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570245"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570245"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908163,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15616898",
+     "leftNum": 12
+    },
+    {
+     "id": 36913089,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15616898",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "532900",
+   "cityName": "大理白族自治州",
+   "storeCode": "3570101",
+   "storeName": "麦当劳大理宾川路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570101"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570101"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908138,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15233039",
+     "leftNum": 12
+    },
+    {
+     "id": 36913064,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15233039",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "210200",
+   "cityName": "大连市",
+   "storeCode": "3230461",
+   "storeName": "麦当劳大连希望广场儿童医院餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230461"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230461"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845051,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10002052",
+     "leftNum": 12
+    },
+    {
+     "id": 36849985,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10002052",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "230600",
+   "cityName": "大庆市",
+   "storeCode": "3230092",
+   "storeName": "麦当劳大庆萨尔图万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230092"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230092"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906979,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10086951",
+     "leftNum": 12
+    },
+    {
+     "id": 36911911,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10086951",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "140200",
+   "cityName": "大同市",
+   "storeCode": "1950379",
+   "storeName": "麦当劳大同万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1950379"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1950379"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907339,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15227812",
+     "leftNum": 12
+    },
+    {
+     "id": 36912270,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15227812",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "210600",
+   "cityName": "丹东市",
+   "storeCode": "3230477",
+   "storeName": "麦当劳丹东国际商贸城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230477"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230477"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908495,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10120454",
+     "leftNum": 12
+    },
+    {
+     "id": 36913423,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10120454",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "460400",
+   "cityName": "儋州市",
+   "storeCode": "1420618",
+   "storeName": "麦当劳儋州荣兴大酒店餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420618"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420618"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908564,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15295109",
+     "leftNum": 12
+    },
+    {
+     "id": 36913485,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15295109",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "533100",
+   "cityName": "德宏傣族景颇族自治州",
+   "storeCode": "3570127",
+   "storeName": "麦当劳德宏芒市团结大街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570127"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570127"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908164,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11617680",
+     "leftNum": 12
+    },
+    {
+     "id": 36913090,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11617680",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "510600",
+   "cityName": "德阳市",
+   "storeCode": "3450026",
+   "storeName": "麦当劳德阳长江西路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3450026"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3450026"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904329,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16113800",
+     "leftNum": 12
+    },
+    {
+     "id": 36909290,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16113800",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "371400",
+   "cityName": "德州市",
+   "storeCode": "3350386",
+   "storeName": "麦当劳德州星耀天地餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3350386"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3350386"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907723,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16286138",
+     "leftNum": 12
+    },
+    {
+     "id": 36912650,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16286138",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "621100",
+   "cityName": "定西市",
+   "storeCode": "5170023",
+   "storeName": "麦当劳定西万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "5170023"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "5170023"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908573,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13622192",
+     "leftNum": 12
+    },
+    {
+     "id": 36913488,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13622192",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "469007",
+   "cityName": "东方市",
+   "storeCode": "1420674",
+   "storeName": "麦当劳东方万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420674"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420674"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908577,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15018508",
+     "leftNum": 12
+    },
+    {
+     "id": 36913492,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15018508",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "441900",
+   "cityName": "东莞市",
+   "storeCode": "1420262",
+   "storeName": "麦当劳东莞南城宏伟路得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420262"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420262"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906412,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10005237",
+     "leftNum": 12
+    },
+    {
+     "id": 36911361,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10005237",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "370500",
+   "cityName": "东营市",
+   "storeCode": "3350133",
+   "storeName": "麦当劳东营万达东城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3350133"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3350133"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907541,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12585737",
+     "leftNum": 12
+    },
+    {
+     "id": 36912468,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12585737",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "150600",
+   "cityName": "鄂尔多斯市",
+   "storeCode": "1980101",
+   "storeName": "麦当劳鄂尔多斯康巴什新区餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1980101"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1980101"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36903694,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11940934",
+     "leftNum": 12
+    },
+    {
+     "id": 36908656,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11940934",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "420700",
+   "cityName": "鄂州市",
+   "storeCode": "1960039",
+   "storeName": "麦当劳鄂州南浦路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1960039"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1960039"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907700,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10009598",
+     "leftNum": 12
+    },
+    {
+     "id": 36912627,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10009598",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "422800",
+   "cityName": "恩施土家族苗族自治州",
+   "storeCode": "1960352",
+   "storeName": "麦当劳恩施恩广百货(民族路)餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1960352"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1960352"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908590,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16312411",
+     "leftNum": 12
+    },
+    {
+     "id": 36913505,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16312411",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "450600",
+   "cityName": "防城港市",
+   "storeCode": "3570252",
+   "storeName": "麦当劳防城港云海广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570252"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570252"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908189,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15389178",
+     "leftNum": 12
+    },
+    {
+     "id": 36913115,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15389178",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "440600",
+   "cityName": "佛山市",
+   "storeCode": "1400663",
+   "storeName": "麦当劳佛山同济东路岭悦荟餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1400663"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1400663"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904692,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16323686",
+     "leftNum": 12
+    },
+    {
+     "id": 36909649,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16323686",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "350100",
+   "cityName": "福州市",
+   "storeCode": "1410176",
+   "storeName": "麦当劳福州南后街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-23",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-24",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-25",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-26",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-27",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-29",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-30",
+     "storeCode": "1410176"
+    },
+    {
+     "date": "2026-10-31",
+     "storeCode": "1410176"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36627008,
+     "timeStart": "19:00",
+     "timeEnd": "20:30",
+     "partyMin": 1,
+     "partyMax": 30,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "15498770",
+     "rgmEmpNo": "15879642",
+     "leftNum": 30
+    }
+   ]
+  },
+  {
+   "cityCode": "210400",
+   "cityName": "抚顺市",
+   "storeCode": "3230441",
+   "storeName": "麦当劳抚顺顺城万达餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230441"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230441"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845095,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10034178",
+     "leftNum": 12
+    },
+    {
+     "id": 36850028,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10034178",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "361000",
+   "cityName": "抚州市",
+   "storeCode": "1410227",
+   "storeName": "麦当劳抚州学府中央购物广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1410227"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1410227"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908521,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15466124",
+     "leftNum": 12
+    },
+    {
+     "id": 36913449,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15466124",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "210900",
+   "cityName": "阜新市",
+   "storeCode": "3230323",
+   "storeName": "麦当劳阜新人民大街友谊商城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230323"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230323"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845259,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11929754",
+     "leftNum": 12
+    },
+    {
+     "id": 36850190,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11929754",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "341200",
+   "cityName": "阜阳市",
+   "storeCode": "3500051",
+   "storeName": "麦当劳阜阳时代广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500051"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500051"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904225,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10004858",
+     "leftNum": 12
+    },
+    {
+     "id": 36909186,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10004858",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "360700",
+   "cityName": "赣州市",
+   "storeCode": "1410384",
+   "storeName": "麦当劳赣州赣县星洲润达餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1410384"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1410384"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908510,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14150229",
+     "leftNum": 12
+    },
+    {
+     "id": 36913438,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14150229",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "511600",
+   "cityName": "广安市",
+   "storeCode": "3450292",
+   "storeName": "麦当劳广安凌云路得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3450292"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3450292"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908585,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16263558",
+     "leftNum": 12
+    },
+    {
+     "id": 36913500,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16263558",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "510800",
+   "cityName": "广元市",
+   "storeCode": "3450111",
+   "storeName": "麦当劳广元图腾海博春天餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3450111"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3450111"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904311,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11040299",
+     "leftNum": 12
+    },
+    {
+     "id": 36909272,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11040299",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "440100",
+   "cityName": "广州市",
+   "storeCode": "1400019",
+   "storeName": "麦当劳广州华夏康隆餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1400019"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1400019"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36842602,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16194903",
+     "leftNum": 12
+    },
+    {
+     "id": 36847561,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16194903",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "450800",
+   "cityName": "贵港市",
+   "storeCode": "3570269",
+   "storeName": "麦当劳贵港吾悦餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570269"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570269"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908155,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14393457",
+     "leftNum": 12
+    },
+    {
+     "id": 36913081,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14393457",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "520100",
+   "cityName": "贵阳市",
+   "storeCode": "3570069",
+   "storeName": "麦当劳贵阳美乐城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570069"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570069"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908087,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15602757",
+     "leftNum": 12
+    },
+    {
+     "id": 36913013,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15602757",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "450300",
+   "cityName": "桂林市",
+   "storeCode": "3570109",
+   "storeName": "麦当劳桂林花生唐餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570109"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570109"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36905070,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15163499",
+     "leftNum": 12
+    },
+    {
+     "id": 36910024,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15163499",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "230100",
+   "cityName": "哈尔滨市",
+   "storeCode": "3230231",
+   "storeName": "麦当劳哈尔滨华润万象汇餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230231"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230231"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845139,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16088903",
+     "leftNum": 12
+    },
+    {
+     "id": 36850072,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16088903",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "460100",
+   "cityName": "海口市",
+   "storeCode": "1420716",
+   "storeName": "麦当劳海口长滨大道珈宝广场得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420716"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420716"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906661,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15413814",
+     "leftNum": 12
+    },
+    {
+     "id": 36911607,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15413814",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "130400",
+   "cityName": "邯郸市",
+   "storeCode": "1980353",
+   "storeName": "麦当劳邯郸阳光天鸿广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-23",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-24",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-25",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-27",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-29",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-30",
+     "storeCode": "1980353"
+    },
+    {
+     "date": "2026-10-31",
+     "storeCode": "1980353"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36842474,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16342343",
+     "leftNum": 12
+    },
+    {
+     "id": 36847433,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16342343",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "610700",
+   "cityName": "汉中市",
+   "storeCode": "1960630",
+   "storeName": "麦当劳汉中万邦广场(太白路)餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1960630"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1960630"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36846194,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12980959",
+     "leftNum": 12
+    },
+    {
+     "id": 36851121,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12980959",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "330100",
+   "cityName": "杭州市",
+   "storeCode": "3330392",
+   "storeName": "麦当劳杭州江河时代餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3330392"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3330392"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845320,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10077482",
+     "leftNum": 12
+    },
+    {
+     "id": 36850251,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10077482",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "340100",
+   "cityName": "合肥市",
+   "storeCode": "3500182",
+   "storeName": "麦当劳合肥蜀山京东Mall餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500182"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500182"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904091,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15635005",
+     "leftNum": 12
+    },
+    {
+     "id": 36909053,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15635005",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "441600",
+   "cityName": "河源市",
+   "storeCode": "1400339",
+   "storeName": "麦当劳河源中山大道餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1400339"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1400339"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36842815,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10005681",
+     "leftNum": 12
+    },
+    {
+     "id": 36847771,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10005681",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "371700",
+   "cityName": "菏泽市",
+   "storeCode": "3350143",
+   "storeName": "麦当劳菏泽万达金街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3350143"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3350143"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845941,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15052037",
+     "leftNum": 12
+    },
+    {
+     "id": 36850868,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15052037",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "410600",
+   "cityName": "鹤壁市",
+   "storeCode": "3560061",
+   "storeName": "麦当劳鹤壁万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "storeCode": "3560061"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3560061"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3560061"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3560061"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3560061"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36966108,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15134350",
+     "leftNum": 12
+    },
+    {
+     "id": 36971059,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15134350",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "131100",
+   "cityName": "衡水市",
+   "storeCode": "1950570",
+   "storeName": "麦当劳衡水爱特生活广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1950570"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1950570"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845749,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15553169",
+     "leftNum": 12
+    },
+    {
+     "id": 36850676,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15553169",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "430400",
+   "cityName": "衡阳市",
+   "storeCode": "3390184",
+   "storeName": "麦当劳衡阳中粮路得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3390184"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3390184"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907892,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10078585",
+     "leftNum": 12
+    },
+    {
+     "id": 36912819,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10078585",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "532500",
+   "cityName": "红河哈尼族彝族自治州",
+   "storeCode": "3570278",
+   "storeName": "麦当劳红河哈尼族彝族自治蒙自天马路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3570278"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3570278"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908122,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12111491",
+     "leftNum": 12
+    },
+    {
+     "id": 36913048,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12111491",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "150100",
+   "cityName": "呼和浩特市",
+   "storeCode": "1980351",
+   "storeName": "麦当劳呼和浩特世贸中央广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1980351"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1980351"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904116,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10031070",
+     "leftNum": 12
+    },
+    {
+     "id": 36909078,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10031070",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "150700",
+   "cityName": "呼伦贝尔市",
+   "storeCode": "1980377",
+   "storeName": "麦当劳呼伦贝尔贝尔大街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1980377"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1980377"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904218,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12917635",
+     "leftNum": 12
+    },
+    {
+     "id": 36909179,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12917635",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "330500",
+   "cityName": "湖州市",
+   "storeCode": "3330511",
+   "storeName": "麦当劳湖州东玺商业中心得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3330511"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3330511"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907212,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13049873",
+     "leftNum": 12
+    },
+    {
+     "id": 36912144,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13049873",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "211400",
+   "cityName": "葫芦岛市",
+   "storeCode": "3230339",
+   "storeName": "麦当劳葫芦岛飞天广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230339"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230339"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36846766,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15995019",
+     "leftNum": 12
+    },
+    {
+     "id": 36851688,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15995019",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "431200",
+   "cityName": "怀化市",
+   "storeCode": "3390198",
+   "storeName": "麦当劳怀化湖天南路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3390198"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3390198"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907977,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10101311",
+     "leftNum": 12
+    },
+    {
+     "id": 36912904,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10101311",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "320800",
+   "cityName": "淮安市",
+   "storeCode": "1990245",
+   "storeName": "麦当劳淮安吾悦广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1990245"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1990245"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36843224,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15839528",
+     "leftNum": 12
+    },
+    {
+     "id": 36848178,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15839528",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "340600",
+   "cityName": "淮北市",
+   "storeCode": "3500069",
+   "storeName": "麦当劳淮北万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500069"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500069"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904232,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13577676",
+     "leftNum": 12
+    },
+    {
+     "id": 36909193,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13577676",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "340400",
+   "cityName": "淮南市",
+   "storeCode": "3500067",
+   "storeName": "麦当劳淮南吾悦广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500067"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500067"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36903692,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10082178",
+     "leftNum": 12
+    },
+    {
+     "id": 36908654,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10082178",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "421100",
+   "cityName": "黄冈市",
+   "storeCode": "1960179",
+   "storeName": "麦当劳黄冈居然之家餐厅",
+   "dates": [
+    {
+     "date": "2026-10-18",
+     "storeCode": "1960179"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1960179"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1960179"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1960179"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1960179"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36968954,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14430668",
+     "leftNum": 12
+    },
+    {
+     "id": 36973879,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14430668",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "341000",
+   "cityName": "黄山市",
+   "storeCode": "3500057",
+   "storeName": "麦当劳黄山天盈餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3500057"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3500057"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36904271,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11055049",
+     "leftNum": 12
+    },
+    {
+     "id": 36909232,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11055049",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "420200",
+   "cityName": "黄石市",
+   "storeCode": "1960226",
+   "storeName": "麦当劳黄石居然之家餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1960226"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1960226"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907938,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "",
+     "leftNum": 12
+    },
+    {
+     "id": 36912865,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "441300",
+   "cityName": "惠州市",
+   "storeCode": "1420219",
+   "storeName": "麦当劳惠州华贸餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420219"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420219"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906546,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12577497",
+     "leftNum": 12
+    },
+    {
+     "id": 36911495,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "12577497",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "230300",
+   "cityName": "鸡西市",
+   "storeCode": "3230155",
+   "storeName": "麦当劳鸡西万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230155"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230155"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908490,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15159722",
+     "leftNum": 12
+    },
+    {
+     "id": 36913418,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15159722",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "360800",
+   "cityName": "吉安市",
+   "storeCode": "1410572",
+   "storeName": "麦当劳吉安泰和小城故事餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1410572"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1410572"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36908486,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15898009",
+     "leftNum": 12
+    },
+    {
+     "id": 36913414,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15898009",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "220200",
+   "cityName": "吉林市",
+   "storeCode": "3230009",
+   "storeName": "麦当劳吉林东方商厦餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230009"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230009"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845175,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11174116",
+     "leftNum": 12
+    },
+    {
+     "id": 36850106,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "11174116",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "370100",
+   "cityName": "济南市",
+   "storeCode": "3350292",
+   "storeName": "麦当劳济南龙鼎大道得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3350292"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3350292"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845631,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16299305",
+     "leftNum": 12
+    },
+    {
+     "id": 36850559,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16299305",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "370800",
+   "cityName": "济宁市",
+   "storeCode": "3350091",
+   "storeName": "麦当劳济宁运河城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3350091"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3350091"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845721,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15846089",
+     "leftNum": 12
+    },
+    {
+     "id": 36850648,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15846089",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "230800",
+   "cityName": "佳木斯市",
+   "storeCode": "3230179",
+   "storeName": "麦当劳佳木斯万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230179"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230179"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906876,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15643288",
+     "leftNum": 12
+    },
+    {
+     "id": 36911810,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15643288",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "330400",
+   "cityName": "嘉兴市",
+   "storeCode": "3330325",
+   "storeName": "麦当劳嘉兴戴梦得餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3330325"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3330325"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845522,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16260915",
+     "leftNum": 12
+    },
+    {
+     "id": 36850453,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16260915",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "440700",
+   "cityName": "江门市",
+   "storeCode": "1420154",
+   "storeName": "麦当劳江门南环得来速餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1420154"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1420154"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36906343,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15028349",
+     "leftNum": 12
+    },
+    {
+     "id": 36911292,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15028349",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "410800",
+   "cityName": "焦作市",
+   "storeCode": "3560052",
+   "storeName": "麦当劳焦作万达广场餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3560052"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3560052"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36905067,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13511820",
+     "leftNum": 12
+    },
+    {
+     "id": 36910021,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "13511820",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "445200",
+   "cityName": "揭阳市",
+   "storeCode": "1400730",
+   "storeName": "麦当劳揭阳仁义路餐厅",
+   "dates": [
+    {
+     "date": "2026-10-22",
+     "storeCode": "1400730"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 37089261,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10003875",
+     "leftNum": 12
+    },
+    {
+     "id": 37094217,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "10003875",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "330700",
+   "cityName": "金华市",
+   "storeCode": "3330203",
+   "storeName": "麦当劳金华帝壹城餐厅",
+   "dates": [
+    {
+     "date": "2026-10-14",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-15",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-16",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3330203"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3330203"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36845435,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16320981",
+     "leftNum": 12
+    },
+    {
+     "id": 36850366,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "16320981",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "210700",
+   "cityName": "锦州市",
+   "storeCode": "3230175",
+   "storeName": "麦当劳锦州万达餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "3230175"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "3230175"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907057,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15738511",
+     "leftNum": 12
+    },
+    {
+     "id": 36911989,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "15738511",
+     "leftNum": 12
+    }
+   ]
+  },
+  {
+   "cityCode": "140500",
+   "cityName": "晋城市",
+   "storeCode": "1950396",
+   "storeName": "麦当劳晋城文昌东街餐厅",
+   "dates": [
+    {
+     "date": "2026-10-16",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-17",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-18",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-19",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-20",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-21",
+     "storeCode": "1950396"
+    },
+    {
+     "date": "2026-10-22",
+     "storeCode": "1950396"
+    }
+   ],
+   "sessions": [
+    {
+     "id": 36907361,
+     "timeStart": "10:30",
+     "timeEnd": "12:00",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14617206",
+     "leftNum": 12
+    },
+    {
+     "id": 36912289,
+     "timeStart": "14:00",
+     "timeEnd": "15:30",
+     "partyMin": 5,
+     "partyMax": 12,
+     "price": 4500,
+     "cookEmpNo": "",
+     "opEmpNo": "",
+     "rgmEmpNo": "14617206",
+     "leftNum": 12
+    }
+   ]
+  }
+ ]
+}

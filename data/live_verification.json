@@ -1,0 +1,52 @@
+{
+  "capturedAt": "2026-10-13 18:31:48",
+  "capturedVia": "腾讯 WorkBuddy 自定义连接器 mcd-mcp（mcp.mcd.cn）",
+  "method": "在 WorkBuddy 会话中通过 mcp__mcd-mcp__* 工具逐级调用，未使用任何本地凭证文件",
+  "chain": [
+    {
+      "step": 1,
+      "tool": "mall-points-products",
+      "arguments": { "catRuleIds": "1>6>20" },
+      "note": "catRuleIds=1>6>20 即「生日类派对」类目规则",
+      "resultSummary": "返回 6 个生日派对 SPU，含 spuId / point / price / selling / upTime / downTime / status"
+    },
+    {
+      "step": 2,
+      "tool": "query-party-city",
+      "arguments": { "spuId": 8516 },
+      "note": "8516 = 麦当劳一起开心鸭尊享版生日派对",
+      "resultSummary": "返回 281 个城市，含 code / name / latitude / longitude / initial / sortNo"
+    },
+    {
+      "step": 3,
+      "tool": "query-party-store",
+      "arguments": { "spuId": 8516, "code": "110100", "latitude": 39.904179, "longitude": 116.407387 },
+      "note": "北京市",
+      "resultSummary": "返回 365 家可办门店（响应约 103KB），含 name / address / code / businessStatus / onlineBusinessStatus / distanceText"
+    },
+    {
+      "step": 4,
+      "tool": "query-party-store-date",
+      "arguments": { "spuId": 8516, "storeCode": "1951035" },
+      "note": "1951035 = 麦当劳北京东单北大街餐厅",
+      "resultSummary": "返回 7 个可约日期：2026-10-16 至 2026-10-22"
+    },
+    {
+      "step": 5,
+      "tool": "query-party-store-session",
+      "arguments": { "spuId": 8516, "storeCode": "1951035", "dateStr": "2026-10-17" },
+      "note": "链路终点，取 10-17 当日场次",
+      "resultSummary": "返回 2 个场次",
+      "sessions": [
+        { "id": 36916457, "timeStart": "12:00", "timeEnd": "13:30", "partyMin": 5, "partyMax": 12, "price": 13800, "leftNum": 12 },
+        { "id": 36921418, "timeStart": "18:30", "timeEnd": "20:00", "partyMin": 5, "partyMax": 12, "price": 13800, "leftNum": 12 }
+      ]
+    }
+  ],
+  "observations": [
+    "price 单位为分：13800 = ¥138.00，与 SPU 的 price 字段（\"138\"）一致，链路自洽",
+    "同一门店不同品类的场次时间不同：生日派对为 12:00–13:30 / 18:30–20:00，而亲子读书会为 10:30–12:00 / 14:00–15:30，说明场次配置跟随 SPU",
+    "party-order-create 未被调用——本项目全链路只读",
+    "MCP 工具通过 WorkBuddy 连接器调用时，返回体同样带有字段说明与原始 JSON，解析逻辑与直连一致"
+  ]
+}

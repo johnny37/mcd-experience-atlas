@@ -1,0 +1,20 @@
+# 凭证防护：任何可能包含 MCP Token 的文件都不应入库。
+# 本项目只从环境变量 MCD_MCP_TOKEN 或 WorkBuddy 连接器读取凭证，
+# 不引用任何本地凭证文件路径。
+*.token
+*token*.txt
+*secret*
+*.pem
+*.key
+.env
+.env.*
+
+# Python 与系统临时文件
+__pycache__/
+*.pyc
+.DS_Store
+.venv/
+venv/
+
+# 采集过程的中间产物
+*.log

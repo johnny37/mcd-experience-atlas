@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>麦当劳体验活动地图 · mcd-experience-atlas</title>
+<style>
+  :root{
+    --bg:#ffffff; --surface:#f7f7f5; --surface2:#efeee9;
+    --text:#1c1c1a; --muted:#6f6e69; --faint:#a9a8a2;
+    --line:#e3e2dc; --line2:#d3d1c7;
+    --red:#DA291C; --red-soft:#fbeae8; --yellow:#FFC72C; --yellow-soft:#fdf3d9;
+    --teal:#0F6E56; --teal-soft:#e1f5ee;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg); color:var(--text);
+    font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--red); text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  header{border-bottom:1px solid var(--line); padding:18px 24px 14px}
+  .title h1{margin:0; font-size:19px; font-weight:600; letter-spacing:.2px}
+  .title p{margin:4px 0 0; font-size:13px; color:var(--muted); max-width:680px}
+  .stats{display:flex; gap:10px; flex-wrap:wrap; margin-top:12px}
+  .stat{background:var(--surface); border-radius:8px; padding:7px 13px; min-width:84px}
+  .stat b{display:block; font-size:19px; font-weight:600; line-height:1.2}
+  .stat span{font-size:11px; color:var(--muted)}
+
+  .toolbar{
+    display:flex; flex-wrap:wrap; gap:10px; align-items:center;
+    padding:10px 24px; border-bottom:1px solid var(--line); background:var(--bg);
+  }
+  .toolbar label{font-size:12px; color:var(--muted)}
+  select,.search{
+    padding:6px 10px; border:1px solid var(--line2); border-radius:8px;
+    font-size:13px; background:var(--bg); color:var(--text);
+  }
+  select:focus,.search:focus{outline:2px solid var(--yellow); outline-offset:1px}
+  .seg{display:inline-flex; border:1px solid var(--line2); border-radius:8px; overflow:hidden}
+  .seg button{border:0; background:var(--bg); color:var(--muted); font-size:12px; padding:6px 12px; cursor:pointer}
+  .seg button.on{background:var(--text); color:#fff}
+  .spacer{flex:1}
+
+  main{display:grid; grid-template-columns:minmax(0,1fr) 350px; height:calc(100vh - 178px)}
+  @media (max-width:960px){ main{grid-template-columns:1fr; height:auto} }
+
+  #mapWrap{position:relative; overflow:hidden; background:
+     linear-gradient(var(--line) 1px, transparent 1px) 0 0/100% 44px,
+     linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0/44px 100%,
+     var(--bg);}
+  #map{display:block; width:100%; height:100%}
+  .dot{cursor:pointer; transition:opacity .12s}
+  .dot:hover{opacity:.7}
+  .dot.sel{stroke:#1c1c1a; stroke-width:1.8}
+
+  #panel{border-left:1px solid var(--line); overflow-y:auto; padding:16px 18px 40px}
+  #panel h2{margin:0 0 2px; font-size:15px; font-weight:600}
+  #panel .sub{margin:0 0 12px; font-size:12px; color:var(--muted)}
+  .sec{margin-top:16px}
+  .sec h3{margin:0 0 8px; font-size:11px; font-weight:600; color:var(--muted);
+          text-transform:uppercase; letter-spacing:.6px}
+  .card{background:var(--surface); border-radius:8px; padding:10px 12px; margin-bottom:7px}
+  .card .n{font-weight:500; font-size:13px}
+  .card .m{font-size:12px; color:var(--muted); margin-top:2px}
+  .tag{display:inline-block; font-size:11px; padding:1px 7px; border-radius:20px;
+       background:var(--surface2); color:var(--muted); margin:0 5px 4px 0}
+  .tag.ok{background:var(--teal-soft); color:var(--teal)}
+  .tag.warn{background:var(--yellow-soft); color:#854F0B}
+  .tag.none{background:var(--red-soft); color:var(--red)}
+
+  .bar{display:flex; align-items:center; gap:8px; margin-bottom:5px; font-size:12px; cursor:pointer}
+  .bar .lb{width:70px; color:var(--muted); text-align:right; flex:none;
+           overflow:hidden; text-overflow:ellipsis; white-space:nowrap}
+  .bar .tr{flex:1; height:13px; background:var(--surface2); border-radius:3px; overflow:hidden}
+  .bar .fl{height:100%; background:var(--red); border-radius:3px}
+  .bar .vl{width:34px; flex:none; font-variant-numeric:tabular-nums}
+  .bar.on .fl{outline:2px solid var(--text); outline-offset:1px}
+
+  .cal{display:grid; grid-template-columns:repeat(7,1fr); gap:4px; margin-bottom:8px}
+  .cal div{background:var(--surface); border-radius:6px; padding:6px 2px; text-align:center}
+  .cal .d{font-size:10px; color:var(--muted)}
+  .cal .c{font-size:14px; font-weight:600; margin-top:1px}
+  .cal div.zero .c{color:var(--faint)}
+  .cal div.some{background:var(--yellow-soft)}
+  .cal div.full{background:var(--teal-soft)}
+
+  .sess{display:flex; justify-content:space-between; align-items:baseline;
+        border-bottom:1px dashed var(--line2); padding:6px 0; font-size:12px}
+  .sess:last-child{border-bottom:0}
+  .sess .t{font-weight:500; font-variant-numeric:tabular-nums}
+  .sess .r{color:var(--muted); text-align:right}
+
+  .insight{background:var(--yellow-soft); border-radius:8px; padding:10px 12px;
+           font-size:12px; color:#633806; margin-bottom:7px; line-height:1.55}
+  .insight b{font-weight:600}
+
+  .empty{color:var(--faint); font-size:13px; padding:22px 0; text-align:center}
+  .legend{position:absolute; left:14px; bottom:14px; background:rgba(255,255,255,.94);
+          border:1px solid var(--line); border-radius:8px; padding:9px 12px;
+          font-size:11px; color:var(--muted); line-height:1.7; pointer-events:none}
+  .legend i{display:inline-block; width:8px; height:8px; border-radius:50%;
+            margin-right:5px; vertical-align:middle}
+  footer{border-top:1px solid var(--line); padding:11px 24px; font-size:11px; color:var(--faint)}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="title">
+    <h1>麦当劳体验活动地图</h1>
+    <p>基于麦当劳中国官方 MCP 的只读采集：生日派对、主题派对、亲子读书会、品鉴会、体验营，
+       在全国哪些城市、哪些门店、什么时段可以预约。点击地图上的圆点查看门店与场次。</p>
+  </div>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="toolbar">
+  <label>视图</label>
+  <div class="seg" id="modeSeg">
+    <button data-mode="variety" class="on">体验丰富度</button>
+    <button data-mode="stores">可办门店数</button>
+  </div>
+  <label>品类</label>
+  <select id="catSel"></select>
+  <label>门店</label>
+  <select id="storeFilter">
+    <option value="all">全部</option>
+    <option value="open">仅可预约</option>
+  </select>
+  <div class="spacer"></div>
+  <input class="search" id="search" placeholder="搜索城市 / 门店" autocomplete="off" style="width:190px">
+</div>
+
+<main>
+  <div id="mapWrap">
+    <svg id="map" role="img" aria-label="全国体验活动城市分布图"></svg>
+    <div class="legend" id="legend"></div>
+  </div>
+
+  <aside id="panel">
+    <h2 id="pTitle">全国概览</h2>
+    <p class="sub" id="pSub">选择左侧地图上的城市查看详情</p>
+
+    <div class="sec">
+      <h3>数据洞察</h3>
+      <div id="insights"></div>
+    </div>
+
+    <div class="sec">
+      <h3>体验品类城市覆盖（点击筛选）</h3>
+      <div id="coverage"></div>
+    </div>
+
+    <div class="sec">
+      <h3>搜索结果</h3>
+      <div id="resultList"></div>
+    </div>
+
+    <div class="sec" id="detail" style="display:none">
+      <h3 id="dHead">门店</h3>
+      <div id="storeList"></div>
+      <h3 style="margin-top:16px">可约日期与场次（采样）</h3>
+      <div class="cal" id="cal"></div>
+      <div id="sessionList"></div>
+    </div>
+  </aside>
+</main>
+
+<footer>
+  数据来源于麦当劳中国 MCP（mcp.mcd.cn）只读接口，快照时间见 data/atlas.json。
+  门店数据基于代表性体验品类采集，不同品类的可办门店与场次可能存在差异。
+  本项目为独立参赛作品，非麦当劳官方产品；活动规则、价格与余位以麦当劳官方渠道实时结果为准。
+</footer>
+
+<script src="atlas.js"></script>
+</body>
+</html>
