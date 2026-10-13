@@ -104,7 +104,14 @@ def write_atlas(atlas: dict) -> str:
 
 
 def write_standalone(atlas: dict) -> str | None:
-    """生成数据内联的单文件 HTML，便于离线分享。"""
+    """生成数据内联的单文件 HTML，便于离线分享与 GitHub Pages 直接托管。
+
+    同时输出两份：
+      * ``dist/index.html`` —— 分发版；
+      * ``index.html``（仓库根目录）—— 内容相同，使 GitHub Pages
+        选择「main 分支 / 根目录」时，访客打开仓库主页即可看到地图，
+        无需 clone 或额外路径。
+    """
     html_path = os.path.join(WEB_DIR, "index.html")
     js_path = os.path.join(WEB_DIR, "atlas.js")
     if not (os.path.exists(html_path) and os.path.exists(js_path)):
@@ -129,6 +136,11 @@ def write_standalone(atlas: dict) -> str | None:
     os.makedirs(DIST_DIR, exist_ok=True)
     out = os.path.join(DIST_DIR, "index.html")
     with open(out, "w", encoding="utf-8") as fh:
+        fh.write(html)
+
+    # 仓库根目录副本：供 GitHub Pages 根目录托管使用
+    root_out = os.path.join(ROOT, "index.html")
+    with open(root_out, "w", encoding="utf-8") as fh:
         fh.write(html)
     return out
 

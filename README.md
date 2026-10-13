@@ -66,18 +66,32 @@
 
 ```bash
 # 1. 获取代码
-git clone https://github.com/<你的账号>/mcd-experience-atlas.git
+git clone https://github.com/johnny37/mcd-experience-atlas.git
 cd mcd-experience-atlas
 
 # 2. （可选）验证安装 —— 无需 Token，纯本地运行
 python tests/test_toon.py        # 19 项
 python tests/test_data_pack.py   # 20 项
-# → 共 39 项，全部通过即说明环境就绪
+python tests/test_contest_compliance.py  # 24 项
+# → 共 63 项，全部通过即说明环境就绪
 
 # 3. 查看地图（无需 Token）
 python -m http.server 8000
 #    浏览器打开 http://localhost:8000/web/
 ```
+
+### 在线预览（GitHub Pages）
+
+仓库根目录的 `index.html` 是数据完全内联的单文件版本，
+因此可以直接用 GitHub Pages 托管，访客打开链接即可看到地图，无需 clone：
+
+```
+Settings → Pages → Build and deployment → Source: Deploy from a branch
+           → Branch: main / (root) → Save
+```
+
+启用后访问 `https://<你的账号>.github.io/mcd-experience-atlas/`。
+本仓库的 `dist/index.html` 与根目录 `index.html` 内容相同，均可单独分享。
 
 ### 配置 MCP Token（仅采集新数据时需要）
 
@@ -113,9 +127,17 @@ export MCD_MCP_TOKEN="你的 Token"
 
 ### 示例 1：查看地图（最常用，无需 Token）
 
+三种方式任选：
+
 ```bash
+# A. 本地起服务（数据走 data/atlas.json）
 python -m http.server 8000
-# 打开 http://localhost:8000/web/
+#    打开 http://localhost:8000/web/
+
+# B. 直接双击根目录的单文件版（数据已内联，无需服务器、无需 Token）
+#    index.html
+
+# C. 启用 GitHub Pages 后访问在线地址（见上文「在线预览」）
 ```
 
 页面上可以做的事：
@@ -125,7 +147,7 @@ python -m http.server 8000
   地图即时高亮该品类可约的城市，不可约的缩为灰点；
 - **点选城市**：右侧显示该城全部可办门店、7 天可约日期与每日场次数、场次时段与余位；
 - **搜索**：输入「东单」可直接定位到麦当劳北京东单北大街餐厅；
-- **离线分享**：直接双击 `dist/index.html`，数据已内联，不需要服务器。
+- **离线分享**：直接双击根目录 `index.html` 或 `dist/index.html`，数据已内联，不需要服务器。
 
 ### 示例 2：采集最新数据（需要 Token）
 
@@ -262,6 +284,7 @@ mcd-experience-atlas/
 ├── workbuddy.md              使用 WorkBuddy 开发的对话上下文
 ├── SKILL.md                  Agent 技能描述（可被任意 MCP 客户端加载）
 ├── LICENSE                   MIT
+├── index.html               单文件地图页（数据内联，供 GitHub Pages 根目录托管）
 ├── data/
 │   ├── atlas.json            前端使用的打包数据（build_atlas.py 生成）
 │   ├── cities.json           281 城 + 经纬度 + 品类覆盖矩阵
@@ -278,7 +301,7 @@ mcd-experience-atlas/
 │   ├── mcp_client.py         MCP 客户端（混合响应解析、429 退避、写操作黑名单）
 │   ├── toon.py               TOON 解析器（含字面量 \n 归一化）
 │   ├── collect.py            采集脚本（支持 --deep / --resume）
-│   └── build_atlas.py        数据打包 + 单文件版本生成
+│   └── build_atlas.py        数据打包 + 单文件版本生成（同时输出根 index.html）
 ├── web/
 │   ├── index.html            图谱页面（零依赖）
 │   └── atlas.js              投影 + 视图切换 + 品类筛选 + 搜索交互
