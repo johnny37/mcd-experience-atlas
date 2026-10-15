@@ -191,10 +191,12 @@
   var DATA_URL = "../data/atlas.json";
 
   function $(id) { return document.getElementById(id); }
-  function el(tag, cls, text) {
+  function el(tag, cls, text, asHTML) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;
-    if (text != null) n.textContent = text;
+    if (text != null) {
+      if (asHTML) n.innerHTML = text; else n.textContent = text;
+    }
     return n;
   }
   function fmt(n) { return n == null ? "—" : String(n); }
@@ -309,7 +311,7 @@
     if (zero.length) {
       box.appendChild(el("div", "insight",
         "有 " + zero.length + " 款体验活动<b>全国零城市可约</b>，例如「" +
-        zero[0].spuName + "」。已下架或尚未开放场次。"));
+        zero[0].spuName + "」。已下架或尚未开放场次。", true));
     }
 
     // 2. 覆盖最差的非零品类
@@ -318,7 +320,7 @@
     if (nonzero.length) {
       box.appendChild(el("div", "insight",
         "覆盖最窄的在售活动是「" + nonzero[0].spuName + "」，全国仅 <b>" +
-        nonzero[0].cities + "</b> 个城市可约。"));
+        nonzero[0].cities + "</b> 个城市可约。", true));
     }
 
     // 3. 体验丰富度分布
@@ -332,7 +334,7 @@
       box.appendChild(el("div", "insight",
         "每城可体验的活动种类：中位数 <b>" + median + "</b> 款，最少 " + vals[0] +
         " 款，最多 " + vals[vals.length - 1] + " 款。体验最丰富的是<b>" +
-        (top ? top.name : "—") + "</b>。"));
+        (top ? top.name : "—") + "</b>。", true));
     }
 
     // 4. 门店集中度
@@ -345,7 +347,7 @@
       box.appendChild(el("div", "insight",
         "可办门店高度集中：前 10 个城市占全国 <b>" +
         Math.round((top10 / total) * 100) + "%</b>（" +
-        (counts[0] || 0) + " 家为其一城之最）。"));
+        (counts[0] || 0) + " 家为其一城之最）。", true));
     }
   }
 

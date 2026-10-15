@@ -1,14 +1,21 @@
 # 麦当劳体验活动地图 · mcd-experience-atlas
 
-> 基于麦当劳中国官方 MCP 的只读采集与可视化：**生日派对、主题派对、亲子读书会、品鉴会、体验营**
-> 在全国哪些城市、哪些门店、什么时段可以预约。
+> 「我在成都，能办麦当劳生日派对吗？哪家店？多少钱？这周六还有位吗？」——**一次查询就有答案。**
+> 基于麦当劳中国官方 MCP 的只读采集与可视化：生日派对、主题派对、亲子读书会、品鉴会、体验营在全国哪些城市、哪些门店、什么时段可以预约。
 
-[![MCP](https://img.shields.io/badge/MCP-mcp.mcd.cn-DA291C)](https://open.mcd.cn/mcp)
+**🗺️ 在线体验（无需安装，打开即用）：<https://johnny37.github.io/mcd-experience-atlas/>**
+
+[![在线地图](https://img.shields.io/badge/在线地图-立即体验-DA291C)](https://johnny37.github.io/mcd-experience-atlas/)
+[![MCP](https://img.shields.io/badge/MCP-mcp.mcd.cn-FFC72C)](https://open.mcd.cn/mcp)
 [![tools](https://img.shields.io/badge/tools-35%20实测-FFC72C)](MCP_INTEGRATION.md)
 [![cities](https://img.shields.io/badge/城市-281-DA291C)](#)
 [![stores](https://img.shields.io/badge/可办门店-3664-FFC72C)](#)
 [![tests](https://img.shields.io/badge/tests-98%20passed-0F6E56)](#九测试)
 [![license](https://img.shields.io/badge/license-MIT-444)](LICENSE)
+
+![麦当劳体验活动地图总览：全国 281 城可预约活动分布](docs/map-overview.png)
+
+<p align="center"><sub>全国体验活动分布总览 —— 圆点大小 = 可体验的活动款数，右侧为数据洞察（含 2 款全国零城市可约的下架活动、体验丰富度中位数 18 款等独家指标）</sub></p>
 
 ---
 
@@ -91,7 +98,7 @@ Settings → Pages → Build and deployment → Source: Deploy from a branch
            → Branch: main / (root) → Save
 ```
 
-启用后访问 `https://<你的账号>.github.io/mcd-experience-atlas/`。
+本仓库已启用 GitHub Pages，在线地址：<https://johnny37.github.io/mcd-experience-atlas/>。
 本仓库的 `dist/index.html` 与根目录 `index.html` 内容相同，均可单独分享。
 
 ### 配置 MCP Token（仅采集新数据时需要）
@@ -138,7 +145,8 @@ python -m http.server 8000
 # B. 直接双击根目录的单文件版（数据已内联，无需服务器、无需 Token）
 #    index.html
 
-# C. 启用 GitHub Pages 后访问在线地址（见上文「在线预览」）
+# C. 在线访问（零安装）：
+#    https://johnny37.github.io/mcd-experience-atlas/
 ```
 
 页面上可以做的事：
@@ -352,6 +360,8 @@ mcd-experience-atlas/
 │   └── atlas.js              投影 + 视图切换 + 品类筛选 + 搜索交互
 ├── dist/
 │   └── index.html            单文件版本（数据内联，可离线双击打开）
+├── docs/
+│   └── map-overview.png      README 首屏截图（在线演示实拍）
 └── tests/
     ├── test_toon.py              19 项：TOON 解析与混合响应提取
     ├── test_data_pack.py         20 项：数据包结构与自洽性

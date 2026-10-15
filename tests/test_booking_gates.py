@@ -127,24 +127,31 @@ def test_validate():
               "partyAge": "4-12", "partyRange": 3}
     session = {"partyMin": 5, "partyMax": 12, "leftNum": 12, "price": 13800}
 
-    check("合规订单无问题", book.validate(detail, session, 6, "2026-10-17") == [])
+    # 日期动态生成，避免测试随系统时间推移而失效：
+    # 合规订单 = 今天 + 提前量 + 1 天；不合规 = 明天（必然不满足提前量）。
+    from datetime import datetime, timedelta
+    ok_date = (datetime.now() + timedelta(days=detail["partyRange"] + 1)
+               ).strftime("%Y-%m-%d")
+    soon_date = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
 
-    problems = book.validate(detail, session, 3, "2026-10-17")
+    check("合规订单无问题", book.validate(detail, session, 6, ok_date) == [])
+
+    problems = book.validate(detail, session, 3, ok_date)
     check("低于起订人数被拦截", any("起订" in p for p in problems))
 
-    problems = book.validate(detail, session, 20, "2026-10-17")
+    problems = book.validate(detail, session, 20, ok_date)
     check("超过单场上限被拦截", any("上限" in p for p in problems))
 
-    problems = book.validate(detail, dict(session, leftNum=0), 6, "2026-10-17")
+    problems = book.validate(detail, dict(session, leftNum=0), 6, ok_date)
     check("余位为 0 被拦截", any("余位" in p for p in problems))
 
-    problems = book.validate(dict(detail, shopId=2), session, 6, "2026-10-17")
+    problems = book.validate(dict(detail, shopId=2), session, 6, ok_date)
     check("shopId 非 5 被拦截", any("shopId" in p for p in problems))
 
-    problems = book.validate(dict(detail, partyType=-1), session, 6, "2026-10-17")
+    problems = book.validate(dict(detail, partyType=-1), session, 6, ok_date)
     check("partyType 无法确定被拦截", any("partyType" in p for p in problems))
 
-    problems = book.validate(detail, session, 6, "2026-10-15")  # 仅 1 天后
+    problems = book.validate(detail, session, 6, soon_date)
     check("不满足提前预订天数被拦截", any("提前" in p for p in problems))
 
 
