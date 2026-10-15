@@ -462,6 +462,17 @@
     box.appendChild(row2);
   }
 
+  // ---- 结果可见性引导 ------------------------------------------------
+  // 搜索结果/城市详情渲染在右侧栏较深处（品类覆盖列表之下），
+  // 输入关键词后若目标区块不在视野内，自动滚进视野，否则用户会以为搜索无响应。
+  function ensureVisible(node) {
+    if (!node) return;
+    var r = node.getBoundingClientRect();
+    if (r.top < 0 || r.top > window.innerHeight - 80) {
+      node.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }
+
   // ---- 搜索（城市 + 门店）------------------------------------------
   function renderResults(kw) {
     var box = $("resultList");
@@ -471,6 +482,7 @@
       box.appendChild(el("div", "empty", "输入城市名或门店名，如：北京 / 东单"));
       return;
     }
+    ensureVisible(box.closest(".sec"));
     var a = state.atlas;
     var hits = [];
 
@@ -539,6 +551,7 @@
       (state.storeIndex[code] || []).length + " 家可办门店 · " +
       (state.variety[code] || 0) + " 款体验活动";
     $("detail").style.display = "block";
+    ensureVisible($("detail"));
 
     var sl = $("storeList");
     sl.innerHTML = "";
