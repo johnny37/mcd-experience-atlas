@@ -18,6 +18,21 @@
 
 <p align="center"><sub>全国体验活动分布总览 —— 圆点大小 = 可体验的活动款数，右侧为数据洞察（含 2 款全国零城市可约的下架活动、体验丰富度中位数 18 款等独家指标）</sub></p>
 
+### 演示动图
+
+![演示动图：切换视图 → 点击城市看门店 → 搜索城市与门店](docs/demo.gif)
+
+<p align="center"><sub>10 秒走完一遍：切换「可办门店数」视图 → 点击成都看门店与可预约状态 → 搜索「北京」列出 3664 家门店中的匹配项</sub></p>
+
+### 分享海报
+
+<p align="center">
+  <img src="docs/poster-tall.png" width="240" alt="分享海报（竖版）"/>
+  <img src="docs/poster-wide.png" width="520" alt="分享海报（横版）"/>
+</p>
+
+<p align="center"><sub>海报由 <code>src/make_posters.py</code> 从真实采集数据渲染生成，数字不写死；素材在 <a href="https://github.com/johnny37/mcd-experience-atlas/releases/tag/v1.1.0">v1.1.0 Release</a> 可直接下载</sub></p>
+
 > **想转给朋友？复制这句就行 👇**
 > 孩子生日想办麦当劳派对？全国 281 城 3664 家门店哪里能办、多少钱、这周六还有没有位，一张地图查完 → https://johnny37.github.io/mcd-experience-atlas/
 
@@ -358,6 +373,8 @@ mcd-experience-atlas/
 │   ├── toon.py               TOON 解析器（含字面量 \n 归一化）
 │   ├── collect.py            采集脚本（支持 --deep / --resume）
 │   ├── build_atlas.py        数据打包 + 单文件版本生成（同时输出根 index.html）
+│   ├── make_posters.py       分享海报渲染（数字取自 atlas.json，不写死）
+│   ├── make_gif.py           演示动图合成（Pillow）
 │   └── book.py               体验活动预约：带确认闸的下单流程（默认只读）
 ├── web/
 │   ├── index.html            图谱页面（零依赖）
@@ -365,10 +382,15 @@ mcd-experience-atlas/
 ├── dist/
 │   └── index.html            单文件版本（数据内联，可离线双击打开）
 ├── docs/
-│   └── map-overview.png      README 首屏截图（在线演示实拍）
+│   ├── map-overview.png      README 首屏截图（在线演示实拍）
+│   ├── map-only.png          海报用纯地图裁图
+│   ├── demo.gif              10 秒演示动图
+│   ├── poster-tall.png       分享海报（竖版 1200×1820）
+│   └── poster-wide.png       分享海报（横版 1200×628）
 └── tests/
     ├── test_toon.py              19 项：TOON 解析与混合响应提取
     ├── test_data_pack.py         20 项：数据包结构与自洽性
+    ├── test_booking_gates.py     35 项：下单确认闸的安全属性
     └── test_contest_compliance.py 24 项：参赛要求逐项合规校验
 ```
 
