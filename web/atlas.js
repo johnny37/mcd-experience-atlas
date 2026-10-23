@@ -370,6 +370,14 @@
       (state.storeIndex[code] || []).length + " 家可办门店 · " +
       (state.variety[code] || 0) + " 款体验活动";
     $("detail").style.display = "block";
+
+    // 深链同步：把选中的城市写进地址栏，便于直接分享「我这城市」的链接
+    try {
+      var u = new URL(window.location.href);
+      u.searchParams.set("city", city.name);
+      window.history.replaceState(null, "", u.toString());
+    } catch (e) { /* file:// 或旧浏览器，忽略 */ }
+
     ensureVisible($("detail"));
 
     var sl = $("storeList");
@@ -487,6 +495,30 @@
       clearTimeout(timer);
       timer = setTimeout(function () { renderMap(a); }, 150);
     });
+
+    applyDeepLink(a);
+  }
+
+  // ---- 深链：?city=成都 打开即定位到该城市 --------------------------
+  function applyDeepLink(a) {
+    var name = null;
+    try {
+      name = new URL(window.location.href).searchParams.get("city");
+    } catch (e) { return; }
+    if (!name) return;
+
+    var target = null;
+    (a.cities || []).forEach(function (c) {
+      if (!target && (c.name === name || String(c.code) === name)) target = c.code;
+    });
+    if (!target) return;
+
+    // 等地图画完再定位，确保圆点已存在
+    setTimeout(function () {
+      selectCity(target);
+      var q = $("search");
+      if (q) q.value = "";
+    }, 60);
   }
 
   fetch(DATA_URL)

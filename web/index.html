@@ -44,6 +44,12 @@
   .seg button{border:0; background:var(--bg); color:var(--muted); font-size:12px; padding:6px 12px; cursor:pointer}
   .seg button.on{background:var(--text); color:#fff}
   .spacer{flex:1}
+  #shareBtn{
+    border:1px solid var(--line2); border-radius:8px; background:var(--bg); color:var(--muted);
+    font-size:12px; padding:6px 12px; cursor:pointer; white-space:nowrap;
+  }
+  #shareBtn:hover{border-color:var(--red); color:var(--red)}
+  #shareBtn.ok{background:var(--teal-soft); color:var(--teal); border-color:var(--teal)}
 
   main{display:grid; grid-template-columns:minmax(0,1fr) 350px; height:calc(100vh - 178px)}
   @media (max-width:960px){ main{grid-template-columns:1fr; height:auto} }
@@ -133,6 +139,7 @@
   </select>
   <div class="spacer"></div>
   <input class="search" id="search" placeholder="搜索城市 / 门店" autocomplete="off" style="width:190px">
+  <button id="shareBtn" title="复制当前城市的专属链接">复制我这城市链接</button>
 </div>
 
 <main>
@@ -177,5 +184,37 @@
 </footer>
 
 <script src="atlas.js"></script>
+<script>
+(function () {
+  var btn = document.getElementById("shareBtn");
+  if (!btn) return;
+  btn.addEventListener("click", function () {
+    var url = window.location.href;
+    var done = function () {
+      btn.textContent = "已复制 ✓";
+      btn.classList.add("ok");
+      setTimeout(function () {
+        btn.textContent = "复制我这城市链接";
+        btn.classList.remove("ok");
+      }, 1800);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(url).then(done, fallback);
+    } else {
+      fallback();
+    }
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = url;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      try { document.execCommand("copy"); done(); } catch (e) { window.prompt("复制这个链接：", url); }
+      document.body.removeChild(ta);
+    }
+  });
+})();
+</script>
 </body>
 </html>
